@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zahpee')
+angular.module('zhpForm')
 .directive('zhpFormSubmit', ['$parse', '$q', '$timeout', function ($parse, $q, $timeout) {
   return {
     restrict: 'A',
@@ -181,7 +181,7 @@ angular.module('zahpee')
   };
 }]);
 
-angular.module('zahpee')
+angular.module('zhpForm')
 .directive('zhpFormVerify', [function () {
   return {
     restrict: 'A',
@@ -197,7 +197,7 @@ angular.module('zahpee')
   };
 }]);
 
-angular.module('zahpee')
+angular.module('zhpForm')
 .directive('zhpFormDisabled', ['zhpFormDisabled', function (zhpFormDisabled) {
   return {
     restrict: 'A',
@@ -210,7 +210,7 @@ angular.module('zahpee')
   };
 }]);
 
-angular.module('zahpee')
+angular.module('zhpForm')
 .provider('zhpFormDisabled', [function () {
   var defaultDisableHandler = function(rootElement, isDisabled) {
     var jElement = angular.element(rootElement);
