@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('zhpForm')
+angular.module('zhpForm', [])
 .directive('zhpFormSubmit', ['$parse', '$q', '$timeout', function ($parse, $q, $timeout) {
   return {
     restrict: 'A',
